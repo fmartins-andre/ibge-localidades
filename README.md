@@ -2,6 +2,14 @@
 
 Um experimento em React utilizando algumas APIs públicas do IBGE para apresentar informações sobre os Estados, Regiões e Municípios.
 
+## 🔥 Acesse Online
+
+Este projeto está disponível no endereço
+
+[https://ibge-localidades.pages.dev/](https://ibge-localidades.pages.dev/)
+
+Experimente agora mesmo!
+
 ## 🚀 Começando
 
 Este é uma simples SPA em React + Redux Toolkit.
