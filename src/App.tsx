@@ -40,7 +40,7 @@ export default function App() {
   )
 
   const { mesorregiaoWikiPageId } = useGetWikiSearchQuery(
-    `mesorregião ${municipio?.microrregiao.mesorregiao.nome}`,
+    `mesorregião ${municipio?.microrregiao.mesorregiao.nome} ${estado?.sigla}`,
     {
       skip: !municipio?.microrregiao.mesorregiao.nome,
       selectFromResult: result => ({
@@ -50,7 +50,7 @@ export default function App() {
   )
 
   const { microrregiaoWikiPageId } = useGetWikiSearchQuery(
-    `microrregião ${municipio?.microrregiao.nome}`,
+    `microrregião ${municipio?.microrregiao.nome} ${estado?.sigla}`,
     {
       skip: !municipio?.microrregiao.nome,
       selectFromResult: result => ({
@@ -60,7 +60,7 @@ export default function App() {
   )
 
   const { municipioWikiPageId } = useGetWikiSearchQuery(
-    `município ${municipio?.nome}`,
+    `município ${municipio?.nome} ${estado?.sigla}`,
     {
       skip: !municipio?.nome,
       selectFromResult: result => ({
